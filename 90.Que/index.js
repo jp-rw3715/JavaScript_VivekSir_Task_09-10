@@ -1,0 +1,7 @@
+function validateEmail(email) {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+console.log(validateEmail("test@example.com")); // true
+console.log(validateEmail("invalid-email")); // false
